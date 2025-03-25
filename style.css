@@ -1,0 +1,224 @@
+/* Custom CSS for Mobile Shop Invoice Generator */
+
+/* Main button styles */
+.stButton > button {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stButton > button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary action button */
+.primary-button .stButton > button {
+    background-color: #0066ff;
+    color: white;
+}
+
+.primary-button .stButton > button:hover {
+    background-color: #0055dd;
+}
+
+/* Secondary action button */
+.secondary-button .stButton > button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.secondary-button .stButton > button:hover {
+    background-color: #45a049;
+}
+
+/* Warning action button */
+.warning-button .stButton > button {
+    background-color: #ff9800;
+    color: white;
+}
+
+.warning-button .stButton > button:hover {
+    background-color: #e68a00;
+}
+
+/* Danger action button */
+.danger-button .stButton > button {
+    background-color: #f44336;
+    color: white;
+}
+
+.danger-button .stButton > button:hover {
+    background-color: #da190b;
+}
+
+/* Light button */
+.light-button .stButton > button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.light-button .stButton > button:hover {
+    background-color: #e9ecef;
+}
+
+/* Product card styles */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+/* Section container */
+.section-container {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Header and title styling */
+.main-title {
+    color: #0066ff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.sub-title {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* Custom metrics container */
+.metric-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.metric-container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0066ff;
+}
+
+/* Badge styles */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.badge-primary {
+    background-color: #e6f0ff;
+    color: #0066ff;
+}
+
+.badge-success {
+    background-color: #e7f6e7;
+    color: #4CAF50;
+}
+
+.badge-warning {
+    background-color: #fff3e0;
+    color: #ff9800;
+}
+
+.badge-danger {
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+/* Animation for loading */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.loading-animation {
+    animation: pulse 1.5s infinite;
+}
+
+/* Testimonials section */
+.testimonial-card {
+    border-left: 4px solid #0066ff;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-card {
+        padding: 10px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
+}
